@@ -1,7 +1,9 @@
 #JavaScript
 
 1. #Execution Context : Everything in JS executes in "Execution Context".
+
 2. JS is a synchronous single-threaded language.
+
 3. What happens when you run JS program?
    Execution Context is created in 2 phases
    1.Memory creation phase
@@ -9,3 +11,5 @@
    -> Uses call stack for nested execution statrts with Global Exec Context()
    4."Call stack" Maintains the order of executution of context.
    aka "Execution context stack" or "Program Stack" or "Control Stack" or "Run time Stack" or "Machine stack".
+
+4. this and window are created by JS at start of execution even with no code. We have several predefined methods here to use. We can refer to any global context variable and functions with window.variable OR this.variable Or simply variable.
