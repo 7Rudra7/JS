@@ -13,3 +13,14 @@
    aka "Execution context stack" or "Program Stack" or "Control Stack" or "Run time Stack" or "Machine stack".
 
 4. this and window are created by JS at start of execution even with no code. We have several predefined methods here to use. We can refer to any global context variable and functions with window.variable OR this.variable Or simply variable.
+
+5. undefined: undefined is allocated at memory allocation phase.
+When varaible is not found it gives "Not defined".
+undefined is a placeholder.
+
+6. JS is a loosely typed language. 
+var a = 10;
+a= "hello "; // valid
+
+7. a = undefined; // Not a good practice
+ 
