@@ -15,12 +15,17 @@
 4. this and window are created by JS at start of execution even with no code. We have several predefined methods here to use. We can refer to any global context variable and functions with window.variable OR this.variable Or simply variable.
 
 5. undefined: undefined is allocated at memory allocation phase.
-When varaible is not found it gives "Not defined".
-undefined is a placeholder.
+   When varaible is not found it gives "Not defined".
+   undefined is a placeholder.
 
-6. JS is a loosely typed language. 
-var a = 10;
-a= "hello "; // valid
+6. JS is a loosely typed language.
+   var a = 10;
+   a= "hello "; // valid
 
 7. a = undefined; // Not a good practice
- 
+
+8. Scope chain
+   Global variable can be accesed within a function. However local function vaiables cannot be accessed in global level.
+   Scope is dependent on the lexical environment. (Lexical is hierarchy)
+   -> JS finds the variable in local memory , if not found goes to the parent EC using lexical referenece and it goes on until it finds.
+   This is "Scope chain".
