@@ -29,3 +29,9 @@
    Scope is dependent on the lexical environment. (Lexical is hierarchy)
    -> JS finds the variable in local memory , if not found goes to the parent EC using lexical referenece and it goes on until it finds.
    This is "Scope chain".
+
+9. let & const declarations are Hoisted in temporal dead zone:
+   These are hoiseted or memory is allocated in another meomory spaces than global.
+   Temporal deadzone: The time until when the let and const are not assigned value is called temporal deadzone.
+   -> we cannot do redeclaration on let again. It is strict than var.
+   -> const should be initialized while declaration.
