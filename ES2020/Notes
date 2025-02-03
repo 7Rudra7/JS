@@ -35,3 +35,37 @@
    Temporal deadzone: The time until when the let and const are not assigned value is called temporal deadzone.
    -> we cannot do redeclaration on let again. It is strict than var.
    -> const should be initialized while declaration.
+
+10. Block : is grouping multiple staements
+    {
+    // aka Compound Statment
+    }
+
+    Block scpoe :
+    {
+    var a = 10; // we can access it out of this block
+    let b = 20; // Can be accesed in the same block
+    const c = 40; // Can be accesed in the same block
+    }
+
+11. Shadowing in JS:
+    var a = 100;
+    {
+    var a = 10; // a is shadowing
+    console.log(a); // 10
+    }
+    console.log(a); // 10
+    -> Value was modified to 10 becasue they have same memory location this is shadowing.
+
+    let a = 100;
+    {
+    let a = 10; // a is shadowing
+    console.log(a); // 10
+    }
+    console.log(a); // 100 in case of let & const. This is how let and const are block scoped.
+
+12. Illegal shadowing:
+    let a = 20
+    {
+    var a = 12; // Illegal shadowing
+    }
