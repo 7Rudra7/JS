@@ -1,4 +1,15 @@
-console.log(b); // undefined
-console.log(a); // Uncaught refrence error because of let. Trying to access 'a' before initializaion, Temporal dead zone
-let a = 10;
-var b = 100;
+function x() {
+  var a = 7;
+  function y() {
+    console.log(a);
+  }
+  return y;
+}
+var z = x();
+console.log(z);
+z();
+// OP ƒ y() {
+//    console.log(a);
+//}
+// OP 7
+// a was in lexical scope on y yet when we returend the function not only the function but its lexical scoep got returened this is nothing but closure.
