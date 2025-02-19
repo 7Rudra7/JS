@@ -73,10 +73,10 @@
 13. Closure
    Function alone with its lexical scope is Closure.
    Uses:
-   -Module Design pattern
-   -Currying
-   -Functions like once
-   -memoize
-   -maintaining state in async world
-   -setTimeouts
-   -Iterators
+   ->Module Design pattern
+   ->Currying
+   ->Functions like once
+   ->memoize
+   ->maintaining state in async world
+   ->setTimeouts
+   ->Iterators
