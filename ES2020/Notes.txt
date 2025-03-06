@@ -80,3 +80,6 @@
    ->maintaining state in async world
    ->setTimeouts
    ->Iterators
+
+14. Q&a (https://youtu.be/t1nFAMws5FI?si=6SDGsik70PfZb91u)
+   -> Closure & its example.(Rewatch for scope and all sceanrios you can run into)
