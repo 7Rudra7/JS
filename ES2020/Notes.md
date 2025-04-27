@@ -1,6 +1,8 @@
-#JavaScript
+# JavaScript
 
-1. #Execution Context : Everything in JS executes in "Execution Context".
+![alt text](icon.png)
+
+1. Execution Context : Everything in JS executes in "Execution Context".
 
 2. JS is a synchronous single-threaded language.
 
@@ -19,8 +21,11 @@
    undefined is a placeholder.
 
 6. JS is a loosely typed language.
-   var a = 10;
-   a= "hello "; // valid
+
+```js
+var a = 10;
+a = "hello "; // valid
+```
 
 7. a = undefined; // Not a good practice
 
@@ -37,6 +42,8 @@
    -> const should be initialized while declaration.
 
 10. Block : is grouping multiple staements
+
+```js
     {
     // aka Compound Statment
     }
@@ -47,8 +54,11 @@
     let b = 20; // Can be accesed in the same block
     const c = 40; // Can be accesed in the same block
     }
+```
 
 11. Shadowing in JS:
+
+```js
     var a = 100;
     {
     var a = 10; // a is shadowing
@@ -63,23 +73,27 @@
     console.log(a); // 10
     }
     console.log(a); // 100 in case of let & const. This is how let and const are block scoped.
+```
 
 12. Illegal shadowing:
-    let a = 20
-    {
-    var a = 12; // Illegal shadowing
-    }
+
+```js
+let a = 20;
+{
+  var a = 12; // Illegal shadowing
+}
+```
 
 13. Closure
-   Function alone with its lexical scope is Closure.
-   Uses:
-   ->Module Design pattern
-   ->Currying
-   ->Functions like once
-   ->memoize
-   ->maintaining state in async world
-   ->setTimeouts
-   ->Iterators
+    Function alone with its lexical scope is Closure.
+    Uses:
+    ->Module Design pattern
+    ->Currying
+    ->Functions like once
+    ->memoize
+    ->maintaining state in async world
+    ->setTimeouts
+    ->Iterators
 
 14. Q&a (https://youtu.be/t1nFAMws5FI?si=6SDGsik70PfZb91u)
-   -> Closure & its example.(Rewatch for scope and all sceanrios you can run into)
+    -> Closure & its example.(Rewatch for scope and all sceanrios you can run into)
